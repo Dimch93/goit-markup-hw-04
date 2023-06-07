@@ -1,0 +1,386 @@
+:root {
+  --primary-font: Roboto, sans-serif;
+  --primary-gray-color: #434455;
+  --primary-white-color: #ffffff;
+  --primary-skyblue-color: #4d5ae5;
+  --primary-black-color: #2e2f42;
+  --primary-blue-color: #404bbf;
+  --primary-white1-color: #f4f4fd;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--primary-font);
+  color: var(--primary-gray-color);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  background-color: var(--primary-white-color);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  width: 100%;
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--primary-black-color);
+  margin-bottom: 72px;
+  text-align: center;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--primary-black-color);
+  margin-bottom: 8px;
+}
+
+.section-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-gray-color);
+  text-align: center;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* -----------header------------ */
+
+.page-header {
+  background: var(--primary-white-color);
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-skyblue-color);
+  margin-right: 76px;
+}
+
+.logo span {
+  color: var(--primary-black-color);
+}
+
+.logo span:hover,
+.logo span:focus {
+  color: var(--primary-blue-color);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.header-menu {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.page-nav {
+  display: block;
+  padding: 24px 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-black-color);
+}
+
+.page-nav:hover,
+.page-nav:focus {
+  color: var(--primary-blue-color);
+}
+
+.address {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.add {
+  display: block;
+  padding: 24px 0;
+}
+
+.address-list {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-gray-color);
+  font-style: normal;
+}
+
+.address .address-list:hover,
+.address .address-list:focus {
+  color: var(--primary-blue-color);
+}
+
+/* -----main----- */
+/* -----hero----- */
+
+.hero {
+  padding: 188px 0;
+  background: var(--primary-black-color);
+}
+
+.hero-container {
+  width: 100%;
+}
+
+.hero-title {
+  text-align: center;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  color: var(--primary-white-color);
+  max-width: 496px;
+  margin-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button {
+  padding: 16px 32px;
+  display: block;
+  margin: 0 auto;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--primary-white-color);
+  background: var(--primary-skyblue-color);
+  cursor: pointer;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
+}
+
+.button:hover,
+.button:focus {
+  background: var(--primary-blue-color);
+}
+
+/* -----section Advantages----- */
+
+.section-advantages {
+  padding: 120px 0;
+}
+
+.advantages-container {
+}
+.advantages {
+  display: flex;
+  gap: 24px;
+}
+
+.advantages-list {
+  width: calc((100% - 72px) / 4);
+}
+
+/* ----- section What are we doing ----- */
+
+.section-doing {
+  padding-bottom: 120px;
+}
+
+.container-doing {
+}
+
+.doing {
+  display: flex;
+  gap: 24px;
+}
+
+.doing-list {
+  width: calc((100% - 48px) / 3);
+}
+
+/* ----- section Our Team ----- */
+
+.section-our-tem {
+  padding: 120px 0;
+  background: var(--primary-white1-color);
+}
+
+.our-team-container {
+}
+
+.employees {
+  display: flex;
+  gap: 24px;
+}
+
+.employees-list {
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
+  background: var(--primary-white-color);
+}
+
+.title-container {
+  padding: 32px 16px;
+  align-items: center;
+  text-align: center;
+}
+
+/* -----footer----- */
+
+.page-footer {
+  padding: 100px 0;
+  background: var(--primary-black-color);
+}
+
+.footer-container {
+}
+
+.footer {
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-skyblue-color);
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.footer span {
+  color: #f4f4fd;
+}
+
+.footer-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-white1-color);
+  max-width: 264px;
+}
+
+/* -----portfolio----- */
+
+.section-portfolio {
+  padding: 96px 0 120px 0;
+}
+
+.div-btn {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
+}
+
+.btn {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--primary-skyblue-color);
+  background: var(--primary-white1-color);
+  cursor: pointer;
+  padding: 12px 24px;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+}
+
+.btn:hover,
+.btn:focus {
+  border: 1px solid transparent;
+  color: var(--primary-white-color);
+  background: var(--primary-blue-color);
+}
+
+.div-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}
+
+.portfolio-list {
+  width: calc((100% - 48px) / 3);
+}
+
+.title-cont {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
