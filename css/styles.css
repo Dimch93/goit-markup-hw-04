@@ -89,7 +89,6 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--primary-gray-color);
-  text-align: center;
 }
 
 .visually-hidden {
@@ -255,8 +254,6 @@ img {
   padding: 120px 0;
 }
 
-.advantages-container {
-}
 .advantages {
   display: flex;
   gap: 24px;
@@ -266,13 +263,21 @@ img {
   width: calc((100% - 72px) / 4);
 }
 
+.icon-advantages {
+  max-width: 100%;
+  width: 264px;
+  height: 112px;
+  background-image: url(/images/rectangle.jpg);
+  margin-bottom: 8px;
+  border-radius: 4px;
+}
+
+.icon-advantages-list {
+}
 /* ----- section What are we doing ----- */
 
 .section-doing {
   padding-bottom: 120px;
-}
-
-.container-doing {
 }
 
 .doing {
@@ -289,9 +294,9 @@ img {
 .section-our-tem {
   padding: 120px 0;
   background: var(--primary-white1-color);
-}
-
-.our-team-container {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .employees {
@@ -316,9 +321,6 @@ img {
 .page-footer {
   padding: 100px 0;
   background: var(--primary-black-color);
-}
-
-.footer-container {
 }
 
 .footer {
@@ -378,6 +380,8 @@ img {
   border: 1px solid transparent;
   color: var(--primary-white-color);
   background: var(--primary-blue-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .div-container {
@@ -386,8 +390,35 @@ img {
   gap: 48px 24px;
 }
 
+.overlay {
+  padding: 8px;
+  background-color: #3f51b5;
+  color: #fff;
+  font-family: sans-serif;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.photo {
+  position: relative;
+  overflow: hidden;
+}
+
+.photo:hover .overlay {
+  transform: translateY(0);
+}
+
 .portfolio-list {
   width: calc((100% - 48px) / 3);
+}
+
+.portfolio-list:hover {
+  box-shadow: inset;
 }
 
 .title-cont {
