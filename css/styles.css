@@ -89,7 +89,6 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--primary-gray-color);
-  margin-bottom: 8px;
 }
 
 .visually-hidden {
@@ -283,6 +282,7 @@ img {
 }
 
 .advantages-list {
+  width: calc((100% - 24px) / 4);
 }
 
 .icon-container {
@@ -296,8 +296,6 @@ img {
 }
 
 .icon-advantages {
-  width: 100%;
-  max-width: 264px;
 }
 
 /* ----- section What are we doing ----- */
@@ -377,7 +375,7 @@ img {
 }
 
 .our-tem-svg {
-  fill: #f4f4fd;
+  fill: var(--primary-white1-color);
 }
 /* ------ Customers ------ */
 
@@ -455,7 +453,7 @@ img {
 }
 
 .footer span {
-  color: #f4f4fd;
+  color: var(--primary-white1-color);
 }
 
 .footer-text {
